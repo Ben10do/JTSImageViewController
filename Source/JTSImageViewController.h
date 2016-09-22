@@ -165,6 +165,14 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
  */
 - (CGFloat)backgroundBlurRadiusForImageViewer:(JTSImageViewController *)imageViewer;
 
+/**
+ Return YES if you want the image viewer to rotate the image in response to touches
+ from the user. Otherwise, return NO.
+ 
+ Defaults to YES.
+ */
+- (BOOL)imageViewerShouldAllowRotation:(JTSImageViewController *)imageViewer;
+
 @end
 
 ///--------------------------------------------------------------------------------------------------------------------

@@ -1762,6 +1762,9 @@ typedef struct {
     UIDynamicItemBehavior *modifier = [[UIDynamicItemBehavior alloc] initWithItems:@[self.imageView]];
     modifier.angularResistance = [self appropriateAngularResistanceForView:self.imageView];
     modifier.density = [self appropriateDensityForView:self.imageView];
+    if ([_optionsDelegate respondsToSelector:@selector(imageViewerShouldAllowRotation:)]) {
+        modifier.allowsRotation = [_optionsDelegate imageViewerShouldAllowRotation:self];
+    }
     [self.animator addBehavior:modifier];
 }
 
