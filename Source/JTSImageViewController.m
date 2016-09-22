@@ -457,6 +457,10 @@ typedef struct {
         }
     }
     
+    if (_imageInfo.isPixelArt) {
+        [self.imageView layer].magnificationFilter = kCAFilterNearest;
+    }
+    
     // We'll add the image view to either the scroll view
     // or the parent view, based on the transition style
     // used in the "show" method.
