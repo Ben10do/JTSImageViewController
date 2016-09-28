@@ -53,15 +53,15 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
 
 @property (assign, nonatomic, readonly) JTSImageViewControllerBackgroundOptions backgroundOptions;
 
-@property (weak, nonatomic, readwrite) id <JTSImageViewControllerDismissalDelegate> dismissalDelegate;
+@property (strong, nonatomic, readwrite) id <JTSImageViewControllerDismissalDelegate> dismissalDelegate;
 
-@property (weak, nonatomic, readwrite) id <JTSImageViewControllerOptionsDelegate> optionsDelegate;
+@property (strong, nonatomic, readwrite) id <JTSImageViewControllerOptionsDelegate> optionsDelegate;
 
-@property (weak, nonatomic, readwrite) id <JTSImageViewControllerInteractionsDelegate> interactionsDelegate;
+@property (strong, nonatomic, readwrite) id <JTSImageViewControllerInteractionsDelegate> interactionsDelegate;
 
-@property (weak, nonatomic, readwrite) id <JTSImageViewControllerAccessibilityDelegate> accessibilityDelegate;
+@property (strong, nonatomic, readwrite) id <JTSImageViewControllerAccessibilityDelegate> accessibilityDelegate;
 
-@property (weak, nonatomic, readwrite) id <JTSImageViewControllerAnimationDelegate> animationDelegate;
+@property (strong, nonatomic, readwrite) id <JTSImageViewControllerAnimationDelegate> animationDelegate;
 
 /**
  Designated initializer.
